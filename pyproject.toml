@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "x-2-comedy-api"
+version = "0.1.0"
+description = "X2 Comedy API"
+authors = ["Landon Turner <landonlewisturner@gmail.com>"]
+readme = "README.md"
+packages = [{include = "x_2_comedy_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.86.0"
+uvicorn = {extras = ["standard"], version = "^0.19.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
